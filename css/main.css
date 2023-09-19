@@ -1,0 +1,145 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 700;
+
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 58.4rem 36.2rem, 108.5rem 67.3rem, contain;
+    background-position: top left, bottom 0% right 0%;
+    font-family: "League Spartan", sans-serif;
+    font-weight: var(--regular-weight);
+    background-color: var(--white);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+.upper_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+}
+
+.main_heading {
+    font-size: 4rem;
+    font-weight: var(--bold-weight);
+    font-family: "League Spartan", sans-serif;
+    color: var(--very-dark-magenta);
+    margin: unset;
+    width: 26rem;
+}
+
+.description {
+    font-weight: var(--bold-weight);
+    font-family: "League Spartan", sans-serif;
+    color: var(--dark-grayish-magenta);
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.review_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+.review {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+}
+
+.review1 {
+    align-self: start;
+}
+
+.review2 {
+    align-self: center;
+}
+
+.review3 {
+    align-self: end;
+}
+
+.bottom_container {
+    display: flex;
+    gap: 1.5rem;
+    height: 19rem;
+    margin-top: 3rem;
+}
+
+.review_card {
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 20rem;
+}
+
+.card1 {
+    align-self: start;
+}
+
+.card2 {
+    align-self: center;
+}
+
+.card3 {
+    align-self: end;
+}
+
+.customer_id {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 20px;
+}
+
+.quote {
+    color: var(--light-grayish-magenta);
+    line-height: 1.5rem;
+    font-family: "League Spartan", sans-serif;
+    font-weight: var(--medium-weight);
+
+}
+
+.person-name {
+    color: var(--light-grayish-magenta);
+    font-family: "League Spartan", sans-serif;
+    font-weight: var(--medium-weight);
+}
+
+.person-desc {
+    color: var(--soft-pink);
+}
+
+.person_image {
+    border-radius: 50%;
+}
